@@ -12,7 +12,7 @@ tags: networking, networking-for-beginners, tcpip-model, tcpip, networking-for-d
 
 Think of the internet as a gigantic, complex postal system. For your messages (emails, photos, website requests, etc.) to reach their destination, they need to be packaged, stamped with an address, and given a delivery route. This is where the TCP/IP model comes in – it's the blueprint for how data moves across the internet. Before diving into TCP/IP, let's travel back in time to a world without networking models and discover why TCP/IP reigns supreme.
 
-### **World Without Networking Models: A Messy Past**
+## **World Without Networking Models: A Messy Past**
 
 In today's interconnected world, it's easy to take for granted the fact that our computers, phones, and everything in between can seamlessly talk to each other. But this simplicity wasn't always the case. Before the dominance of TCP/IP, the world of computer networking was a chaotic mess.
 
