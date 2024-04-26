@@ -91,7 +91,7 @@ Hugo is a fast and modern static site generator written in Go, and it's designed
 
 The challenge presented is to optimize a Docker image for a portfolio website created with Hugo. The initial Docker image size is `434MB`, which is quite large for a simple portfolio website. The goal is to reduce the image size without sacrificing functionality.
 
-To tackle this challenge, two Dockerfiles were created: one for development (`dev`) and one for production (`prod`). The production Dockerfile, on the other hand, is a Multistage build designed for image optimization.
+To tackle this challenge, two Dockerfiles are created: one for development (`dev`) and one for production (`prod`). The production Dockerfile, on the other hand, is a Multistage build designed for image optimization.
 
 #### Development Dockerfile
 
@@ -179,7 +179,7 @@ The production Dockerfile is where the magic happened. It is divided into multip
 
 1. **Build Stage**: This stage installed Hugo and built the static website.
     
-2. **Optimization Stage**: Here, unnecessary files and dependencies were removed.
+2. **Optimization Stage**: Here, unnecessary files and dependencies are removed.
     
 3. **Final Stage**: The last stage copied only the necessary artifacts from the previous stages, resulting in a much lighter image.
     
