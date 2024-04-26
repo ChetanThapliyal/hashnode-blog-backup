@@ -89,9 +89,9 @@ Hugo is a fast and modern static site generator written in Go, and it's designed
 
 ## The Challenge: Image Size Reduction
 
-The challenge presented was to optimize a Docker image for a portfolio website created with Hugo. The initial Docker image size was `434MB`, which is quite large for a simple portfolio website. The goal is to reduce the image size without sacrificing functionality.
+The challenge presented is to optimize a Docker image for a portfolio website created with Hugo. The initial Docker image size is `434MB`, which is quite large for a simple portfolio website. The goal is to reduce the image size without sacrificing functionality.
 
-To tackle this challenge, two Dockerfiles were created: one for development (`dev`) and one for production (`prod`). The production Dockerfile, on the other hand, was a Multistage build designed for image optimization.
+To tackle this challenge, two Dockerfiles were created: one for development (`dev`) and one for production (`prod`). The production Dockerfile, on the other hand, is a Multistage build designed for image optimization.
 
 #### Development Dockerfile
 
@@ -175,7 +175,7 @@ This Dockerfile sets up a complete environment for building and serving a Hugo-b
 
 #### Production Dockerfile: Multistage Build
 
-The production Dockerfile was where the magic happened. It was divided into multiple stages:
+The production Dockerfile is where the magic happened. It is divided into multiple stages:
 
 1. **Build Stage**: This stage installed Hugo and built the static website.
     
@@ -288,7 +288,7 @@ This Dockerfile uses a multi-stage build approach to create a Docker image for a
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1714162068962/ecafac7e-32a7-470f-94da-cae1926d1ecb.png align="center")
 
-By implementing Multistage builds, the final production image size was reduced from `434MB` to an impressive `61MB`. This not only makes the image easier to handle and quicker to deploy but also reduces the attack surface for potential security vulnerabilities.
+By implementing Multistage builds, the final production image size is reduced from `434MB` to an impressive `61MB`. This not only makes the image easier to handle and quicker to deploy but also reduces the attack surface for potential security vulnerabilities.
 
 ### How You Can Achieve Similar Results
 
