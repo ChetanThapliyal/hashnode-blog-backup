@@ -61,6 +61,8 @@ This approach allows independent updates and deployments without affecting other
 
 We will begin by running the application locally using `docker compose` to understand its functionality and then proceed to implement CI for each microservice. This practical exercise will enhance our understanding of continuous integration and deployment.
 
+%[https://github.com/ChetanThapliyal/Argocd-AKS-microservices-deployment] 
+
 ### **CI/CD Overview**:
 
 * **CI/CD** stands for Continuous Integration and Continuous Deployment is a set of practices and tools that automate the processes of integrating code changes, building, testing, and deploying applications.
@@ -100,7 +102,7 @@ This automation saves time and provides confidence that changes won’t break th
 * The Docker images will be pushed to ACR, but Docker Hub can be used as well if preferred.
     
 
-1. **Access** [**Azure DevOps**](http://dev.azure.com):
+1. **Access**[**Azure DevOps**](http://dev.azure.com):
     
     * Log in and create an account if you haven’t already.
         
@@ -750,7 +752,7 @@ Now that we have our AKS cluster ready, we'll proceed with setting up Argo CD to
     * Now to access UI of Argocd, 1st change the type of Argocd Server from ClusterIP to Nodeport:
         
     * ```bash
-          kubectl edit svc/argocd-server -n argocd
+            kubectl edit svc/argocd-server -n argocd
         ```
         
     * ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1719576786135/f5d25702-fc9c-451b-b962-650dd41f79c0.png align="center")
