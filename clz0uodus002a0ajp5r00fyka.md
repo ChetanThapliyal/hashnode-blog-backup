@@ -14,6 +14,8 @@ Maintaining uptime and monitoring system health is crucial for any organization.
 
 ## Project Overview
 
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1721887415375/f688be15-654c-4317-8f19-aa851ad12be9.png align="center")
+
 The project aims to set up a real-time monitoring system that:
 
 * Monitors websites, deployed app and virtual machines (VMs).
